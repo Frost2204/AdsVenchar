@@ -1,0 +1,52 @@
+.pic {
+    width: 70%;
+    height: 50vh;
+    background: url("http:unsplash.it/400x300");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .arrowb {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    height: 60px;
+    width: 100px;
+    background: aquamarine;
+  }
+  
+  .arrowb:before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: slategray;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .arrowb:hover:before {
+    right: 34px;
+    width: 35px;
+  }
+  
+  .arrowb:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #000000;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .arrowb:hover:after {
+    right: 34px;
+    right: 30px;
+  }
